@@ -1,0 +1,9 @@
+version: '3.2'
+services:
+  endpoint:
+    build: https://github.com/dimona-loves-animals/endpoint.git
+    depends_on:
+      - home
+
+  home:
+    build: https://github.com/dimona-loves-animals/home.git
